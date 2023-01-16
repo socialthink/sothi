@@ -1,4 +1,4 @@
-#' Add together two numbers
+#' Theme for ggplot
 #'
 #' @param x A number.
 #' @param y A number.

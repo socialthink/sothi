@@ -2,7 +2,7 @@
 % Please edit documentation in R/theme_sothi.R
 \name{theme_sothi}
 \alias{theme_sothi}
-\title{Add together two numbers}
+\title{Theme for ggplot}
 \usage{
 theme_sothi()
 }
@@ -15,7 +15,7 @@ theme_sothi()
 The sum of \code{x} and \code{y}.
 }
 \description{
-Add together two numbers
+Theme for ggplot
 }
 \examples{
 add(1, 1)

@@ -1,4 +1,4 @@
-#' Add together two numbers
+#' Logo for ggplot
 #'
 #' @param p a ggplot
 #' @param img path to an png-file

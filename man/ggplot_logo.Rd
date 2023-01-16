@@ -2,7 +2,7 @@
 % Please edit documentation in R/ggplot_logo.R
 \name{ggplot_logo}
 \alias{ggplot_logo}
-\title{Add together two numbers}
+\title{Logo for ggplot}
 \usage{
 ggplot_logo(p, logo = system.file("extdata", "logo.png", package = "sothi"))
 }
@@ -15,7 +15,7 @@ ggplot_logo(p, logo = system.file("extdata", "logo.png", package = "sothi"))
 The sum of \code{x} and \code{y}.
 }
 \description{
-Add together two numbers
+Logo for ggplot
 }
 \examples{
 add(1, 1)
