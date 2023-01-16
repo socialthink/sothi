@@ -7,8 +7,8 @@
 #' @examples
 #' add(1, 1)
 ggplot_logo <- function(p, logo=system.file("extdata", "logo.png", package = "sothi")) {
-  img <- image_read(logo)
-  ggdraw() +
-  draw_plot(p,x = 0, y = 0, width = 1, height = 1) +
-  draw_image(img,x = 0.01, y = 0.02, width = 0.1, height = 0.1)
+  img <- magick::image_read(logo)
+  cowplot::ggdraw() +
+    cowplot::draw_plot(p,x = 0, y = 0, width = 1, height = 1) +
+    cowplot::draw_image(img,x = 0.01, y = 0.02, width = 0.1, height = 0.1)
 }
