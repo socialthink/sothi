@@ -55,19 +55,21 @@ theme_upk <- function(){
         size = 9                #font size
       ),
 
-      legend.title=element_text(
-        size=10,
-        family = font
-        ),
-
-      legend.text=element_text(
-        size=9,
-        family = font),
-
       plot.title.position = "plot",
       text = element_text()
 
       #since the legend often requires manual tweaking
       #based on plot content, don't define it here
     )
+
+  theme_update(
+    legend.title=element_text(
+    size=10,
+    family = font
+  ),
+
+  legend.text=element_text(
+    size=9,
+    family = font
+  ))
 }
