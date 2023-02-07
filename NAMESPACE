@@ -2,3 +2,4 @@
 
 export(ggplot_logo)
 export(theme_sothi)
+export(theme_upk)
