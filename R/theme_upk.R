@@ -54,8 +54,8 @@ theme_upk <- function(){
         family = font,            #axis famuly
         size = 9                #font size
       ),
-      plot.title.position = "plot"
-
+      plot.title.position = "plot",
+      text = element_text(family = font)
 
       #since the legend often requires manual tweaking
       #based on plot content, don't define it here
