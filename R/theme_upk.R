@@ -8,6 +8,7 @@
 #' add(1, 1)
 theme_upk <- function(){
   font <- "Georgia"   #assign font family up front
+  font2 <- "Arial"
   sothi_colors <- c( "#c51e3f", "#c22f85", "#935ac1","#007be0","#0092d9","#009fb6")
 
   theme_classic() +    #replace elements we want to change
@@ -34,14 +35,18 @@ theme_upk <- function(){
         margin=margin(5,0,15,0)
       ),
       plot.subtitle = element_text(          #subtitle
-        family = font,            #font family
-        size = 11               #font size
+        family = font2,            #font family
+        size = 12,               #font size
+        hjust = 0,                #left align
+        vjust = 6,
+        colour = "#f4634c"
       ),
 
       plot.caption = element_text(           #caption
-        family = font,            #font family
+        family = font2,            #font family
         size = 8,                 #font size
         hjust = 1,
+        vjust = -5,
         colour = "#f4634c"
       ),
 
@@ -66,7 +71,12 @@ theme_upk <- function(){
         family = font
       ),
 
-      plot.title.position = "plot"
+      plot.title.position = "plot",
+      plot.caption.position = "plot",
+      plot.margin = unit(c(0.03,0.03,0.6,0.03), "cm"),
+      panel.grid.major.y = element_line(color = "#f4634c",
+                                      size = 0.3,
+                                      linetype = "dotted")
 
       #since the legend often requires manual tweaking
       #based on plot content, don't define it here
