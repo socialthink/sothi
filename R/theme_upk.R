@@ -10,9 +10,10 @@ theme_upk <- function(){
   font <- "Georgia"   #assign font family up front
   sothi_colors <- c( "#c51e3f", "#c22f85", "#935ac1","#007be0","#0092d9","#009fb6")
 
-  theme_classic() %+replace%    #replace elements we want to change
+  theme_classic(base_family = font) %+replace%    #replace elements we want to change
 
     theme(
+
 
       #grid elements
       #panel.grid.major = element_blank(),    #strip major gridlines
