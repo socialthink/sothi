@@ -10,7 +10,7 @@ theme_upk <- function(){
   font <- "Georgia"   #assign font family up front
   sothi_colors <- c( "#c51e3f", "#c22f85", "#935ac1","#007be0","#0092d9","#009fb6")
 
-  theme_classic(base_family = font) %+replace%    #replace elements we want to change
+  theme_classic() +    #replace elements we want to change
 
     theme(
 
@@ -56,21 +56,15 @@ theme_upk <- function(){
         size = 9                #font size
       ),
 
-      plot.title.position = "plot",
-      text = element_text()
+      legend.text=element_text(
+        size=9,
+        family = font
+      ),
+
+      plot.title.position = "plot"
 
       #since the legend often requires manual tweaking
       #based on plot content, don't define it here
     )
 
-  theme_update(
-    legend.title=element_text(
-    size=10,
-    family = font
-  ),
-
-  legend.text=element_text(
-    size=9,
-    family = font
-  ))
 }
