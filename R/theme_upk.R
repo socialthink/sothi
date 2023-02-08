@@ -56,8 +56,13 @@ theme_upk <- function(){
         size = 9                #font size
       ),
 
-      legend.text=element_text(
+      legend.text = element_text(
         size=9,
+        family = font
+      ),
+
+      legend.title = element_text(
+        size=11,
         family = font
       ),
 
